@@ -1,8 +1,8 @@
 package application;
 
 class Reina extends Pieza {
-    public Reina(Boolean color) {
-        super(color);
+    public Reina(boolean color,String imagen) {
+        super(color,imagen);
     }
 
 }
