@@ -26,7 +26,7 @@ StandBy (Proximamente??):
 
 	Posible Bug? (tener cuidado) -> Revisar al crear Imagenes y la concurrencia (aveces crasheo por no darle tiempo a cargar imagenes/botones/nose) //creo que la solución que hice no funciona ya que imprimirTablero() y luego esperar, podría hacer click cuando se está en la función ya que luego espera, y cuando espera es porque la función ya terminó
 	Agregar Cronometros (esto está muy lejos en el tiempo)
-	Hacer Jugador vs Computadora (esto está muy lejos en el tiempo)
+	Hacer Jugador vs Computadora (esto está muy lejos en el tiempo, minimax, poda alfa beta, eval(Tablero))
 
 Casos Tests:
 	Verificar que la coronación se haga correctamente (Verificado)
