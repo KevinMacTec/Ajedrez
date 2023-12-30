@@ -1,28 +1,55 @@
 # Ajedrez
 Juego de Ajedrez
 
-Proximamente:
+ FALTA: 
+ 	Verificar (Hecho) -> Crear una lista de piezasComidas, guarda el momento en el que una pieza fue comida (numero de turno,pieza,coordenadas) para poder rehacer un tablero
+ 	Verificar (Hecho) -> Crear un tablero en el que el usuario pueda asignar la posici贸n de las piezas y el turno
+ 				 
+ 	(Hecho) -> Modificar la interacci贸n entre usuario y sistema al ingresar la pieza y donde se mueve
+ 	
+ 	Aprender parte Gr谩fica (JavaFX o hacerlo en Javascript+Html) (Hecho en JavaFX)
+ 	Podr铆a hacer en JavaScript+HTML para subirlo a un posible portfolio
+ 	
+StandBy (Proximamente??):
+	A partir de una lista de movimientos (valida), adelantar o retroceder jugadas (0 retrocede, 1 adelanta)
+	Arreglar la precondici贸n de iniciarTableroPersonalizado (esta' porque soy vago, no deber铆a)
+	Crear opcion de Juego personalizado (esto conlleva a crear casos tests con esta nueva funci贸n)
+	Hacer un men煤 del Tablero, un Inicio donde se seleccione opciones como: (implica cambiar el main al menu, y el main antiguo a partidaNormal, aparte de crear nuevos fxml)
+		Jugar Jugador vs Jugador
+		Jugar Personalizado
+		Configuraciones
+	 		Ajustes gr谩ficos (distribuci贸n y/o proporciones, hacerlo responsive?)
+	 		Activar/Desactivar Sonidos (regular volumen)
+	 		Cambiar el fondo de las casillas o las piezas a elecci贸n de usuario (un cat谩logo)
+	Darle CSS bonito a todo. Est谩 muy r煤stico
+	Hacer un tableroPersonalizado en JavaFX
+	Ponerle sonido al mover las piezas (Otros: Jaque, Coronaci贸n, Enroque, JaqueMate)
+	Hacer Drag and Drop de las piezas a las posiciones posibles?
+	Realizar la documentaci贸n del proyecto de Ajedrez
+ 
+StandBy
+  Posible Bug? (tener cuidado) -> Revisar al crear Imagenes y la concurrencia (aveces crasheo por no darle tiempo a cargar imagenes/botones/nose) //creo que la soluci贸n que hice no 
+  funciona ya que imprimirTablero() y luego esperar, podr铆a hacer click cuando se est谩 en la funci贸n ya que luego espera, y cuando espera es porque la funci贸n ya termin贸
+	Agregar Cronometros (esto est谩 muy lejos en el tiempo)
+	Hacer Jugador vs Computadora (esto est谩 muy lejos en el tiempo, minimax, poda alfa beta, eval(Tablero))
 
-- Revisar que capturaAlPaso funcione en su totalidad (para mover y bloquear jaques)
-- Lista de movimientos, revisar cuando se come una pieza o corona
-- Movimientos horizontales, solo muestra la primera casilla, y no todas
-- Crear el GameLoop (sin tener en cuenta JavaFX)
-- Probar en consola con un prototipo para testear la l骻ica
-- Crear tableros personalizables para poder crear Tests (much韘imos para cubrir todos los escenarios posibles)
-- Pasar a JavaFX (gr醘ico)
-- Ganarle a Nicol醩
-- Agregarle sonidos
-- Crear un editor de tableros, el cual permita ubicar las piezas como uno desee y eligiendo el turno del color que corresponda
-- Poder ver repeticiones de partidas dandole hacia atras los movimientos, para ello se necesita una lista adicional de piezas comidas que indique en que momento fue comida para recuperarla regresando hacia atras en la lista de movimientos
-- Crear una base de datos para guardar las partidas, y en el momento que se desee, poder revisarlas
+Casos Tests:
+	Verificar que la coronaci贸n se haga correctamente (Verificado en JavaFX)
+	Verificar que si el enroque esta amenazado, no se realice (Verificado)
+	Verificar que Rey no se mueva a casillas amenazadas (Verificado)
+	Verificar que se pueda bloquear un jaque correctamente (Verificado)
+	Verificar que solo se pueda mover el Rey cuando est谩 amenazado por 2 piezas a la vez (Verificado)
+	Verificar que no se pueda mover una pieza clavada amenos que sea en la linea de la clavada (Verificado)
+	Verificar que se termine la partida correctamente (JaqueMate o Empate) (Verificado JaqueMate en JavaFX)
+	Verificar que el Rey solo pueda comer piezas que le hacen jaque si no est谩n defendidas (Verificado)
 
-Tests m醩 importantes:
+Tests m谩s importantes:
 
 - enroque
-- comer la pieza que realiza jaque (bloquearJaque incluye la posici髇 de la pieza amenazante)
+- comer la pieza que realiza jaque (bloquearJaque incluye la posici贸n de la pieza amenazante)
 - cubrirse jaque (normalmente o con capturaAlPaso)
 - no enrocar en jaque
-- coronaci髇 de pe髇
+- coronaci贸n de pe贸n
 - mostrar los movimientos posibles para cada pieza
 - mostrar las piezas que pueden bloquear un jaque
 - mostrar las piezas clavadas
