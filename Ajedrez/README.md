@@ -4,9 +4,7 @@ Juego de Ajedrez
  FALTA: 
  	Verificar (Hecho) -> Crear una lista de piezasComidas, guarda el momento en el que una pieza fue comida (numero de turno,pieza,coordenadas) para poder rehacer un tablero
  	Verificar (Hecho) -> Crear un tablero en el que el usuario pueda asignar la posición de las piezas y el turno
- 				 
  	(Hecho) -> Modificar la interacción entre usuario y sistema al ingresar la pieza y donde se mueve
- 	
  	Aprender parte Gráfica (JavaFX o hacerlo en Javascript+Html) (Hecho en JavaFX)
  	Podría hacer en JavaScript+HTML para subirlo a un posible portfolio
  	
