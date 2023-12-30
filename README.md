@@ -1,2 +1,2 @@
 # Documentation
-Documentation
+Here goes the documentation of the project
