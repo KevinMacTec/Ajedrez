@@ -1,8 +1,8 @@
 package application;
 
 class Caballo extends Pieza {
-    public Caballo(Boolean color) {
-        super(color);
+    public Caballo(boolean color,String imagen) {
+        super(color,imagen);
     }
 
 }

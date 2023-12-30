@@ -1,8 +1,8 @@
 package application;
 
 class Torre extends Pieza {
-    public Torre(Boolean color) {
-        super(color);
+    public Torre(boolean color,String imagen) {
+        super(color,imagen);
     }
 
 }
