@@ -1,6 +1,12 @@
 # Ajedrez
 Juego de Ajedrez
 
+Posible Bug? (tener cuidado) -> Revisar al crear Imagenes y la concurrencia (aveces crasheo por no darle tiempo a cargar imagenes/botones/nose) //creo que la solución que hice no funciona ya que imprimirTablero() y luego esperar, podría hacer click cuando se está en la función ya que luego espera, y cuando espera es porque la función ya terminó
+
+URGENTE: Esto no me permite crear un ejecutable ya que siempre tira error
+(no funciona el jar). Tengo que arreglar esto para poder crear una versión jugable.
+
+
  FALTA: 
  	Verificar (Hecho) -> Crear una lista de piezasComidas, guarda el momento en el que una pieza fue comida (numero de turno,pieza,coordenadas) para poder rehacer un tablero
  	Verificar (Hecho) -> Crear un tablero en el que el usuario pueda asignar la posición de las piezas y el turno
@@ -24,12 +30,8 @@ StandBy (Proximamente??):
 	Ponerle sonido al mover las piezas (Otros: Jaque, Coronación, Enroque, JaqueMate)
 	Hacer Drag and Drop de las piezas a las posiciones posibles?
 	Realizar la documentación del proyecto de Ajedrez
- 
-StandBy
-  Posible Bug? (tener cuidado) -> Revisar al crear Imagenes y la concurrencia (aveces crasheo por no darle tiempo a cargar imagenes/botones/nose) //creo que la solución que hice no 
-  funciona ya que imprimirTablero() y luego esperar, podría hacer click cuando se está en la función ya que luego espera, y cuando espera es porque la función ya terminó
 	Agregar Cronometros (esto está muy lejos en el tiempo)
-	Hacer Jugador vs Computadora (esto está muy lejos en el tiempo, minimax, poda alfa beta, eval(Tablero))
+	Hacer Jugador vs Computadora (esto está muy lejos en el tiempo, 	        minimax, poda alfa beta, eval(Tablero))
 
 Casos Tests:
 	Verificar que la coronación se haga correctamente (Verificado en JavaFX)
