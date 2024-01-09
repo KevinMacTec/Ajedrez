@@ -506,13 +506,13 @@ public class Tablero {
     						flag = true;
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey"))) {
     						    resultado++;						
-    						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){ // si hay otra pieza, entonces no es amenaza
     							flag2 = false;
     						}
     					}else{
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     							resultado++;
-    						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){
     							flag2 = false;
     						}
     					}
@@ -525,13 +525,13 @@ public class Tablero {
     						flag = true;
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey"))) {
     						    resultado++;						
-    						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){
     							flag2 = false;
     						}
     					}else{
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     							resultado++;
-    						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){
     							flag2 = false;
     						}
     					}
@@ -544,13 +544,13 @@ public class Tablero {
     						flag = true;
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey"))) {
     						    resultado++;						
-    						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){
     							flag2 = false;
     						}
     					}else{
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     							resultado++;
-    						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){
     							flag2 = false;
     						}
     					}
@@ -563,13 +563,13 @@ public class Tablero {
     						flag = true;
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey"))) {
     						    resultado++;						
-    						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){
     							flag2 = false;
     						}
     					}else{
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     							resultado++;
-    						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){
     							flag2 = false;
     						}
     					}
@@ -584,13 +584,13 @@ public class Tablero {
         						flag = true;
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Peon"))) {
         						    resultado++;						
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}else{
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") )) {
         							resultado++;
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}
@@ -603,13 +603,13 @@ public class Tablero {
         						flag = true;
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey"))) {
         						    resultado++;						
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}else{
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") )) {
         							resultado++;
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}
@@ -625,13 +625,13 @@ public class Tablero {
         						flag = true;
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Peon"))) {
         						    resultado++;						
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}else{
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") )) {
         							resultado++;
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}
@@ -644,13 +644,13 @@ public class Tablero {
         						flag = true;
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey"))) {
         						    resultado++;						
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}else{
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") )) {
         							resultado++;
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}
@@ -666,13 +666,13 @@ public class Tablero {
         						flag = true;
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey"))) {
         						    resultado++;						
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}else{
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") )) {
         							resultado++;
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}
@@ -685,13 +685,13 @@ public class Tablero {
         						flag = true;
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Peon"))) {
         						    resultado++;						
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}else{
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") )) {
         							resultado++;
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}
@@ -707,13 +707,13 @@ public class Tablero {
         						flag = true;
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey"))) {
         						    resultado++;						
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}else{
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") )) {
         							resultado++;
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}
@@ -726,13 +726,13 @@ public class Tablero {
         						flag = true;
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Rey") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Peon"))) {
         						    resultado++;						
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}else{
         						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina") )) {
         							resultado++;
-        						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+        						}else if(hayPieza(filaAux,columnaAux)){
         							flag2 = false;
         						}
         					}
@@ -915,7 +915,7 @@ public class Tablero {
 						coordenadas.add(new Coordenadas(filaAux,columnaAux));
 						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
 							flag = true;
-						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+						}else if(hayPieza(filaAux,columnaAux)){
 							flag = true;
 							coordenadas = new HashSet<>();
 						}
@@ -927,7 +927,7 @@ public class Tablero {
 						coordenadas.add(new Coordenadas(filaAux,columnaAux));
 						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
 							flag = true;
-						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+						}else if(hayPieza(filaAux,columnaAux)){
 							flag = true;
 							coordenadas = new HashSet<>();
 						}
@@ -939,7 +939,7 @@ public class Tablero {
 						coordenadas.add(new Coordenadas(filaAux,columnaAux));
 						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
 							flag = true;
-						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+						}else if(hayPieza(filaAux,columnaAux)){
 							flag = true;
 							coordenadas = new HashSet<>();
 						}
@@ -951,7 +951,7 @@ public class Tablero {
 						coordenadas.add(new Coordenadas(filaAux,columnaAux));
 						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Caballo"))) {
 							flag = true;
-						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+						}else if(hayPieza(filaAux,columnaAux)){
 							flag = true;
 							coordenadas = new HashSet<>();
 						}
@@ -967,14 +967,14 @@ public class Tablero {
 	    						flag2 = true;
 	    						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Peon") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
 	    							flag = true;
-	    						}else if(hayPiezaIgualColor(filaAux,columnaAux,color)){
+	    						}else if(hayPieza(filaAux,columnaAux)){
 	    							flag = true;
 	    							coordenadas = new HashSet<>();
 	    						}
 	    					}else{
 	    						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
 	    							flag = true;
-	    						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+	    						}else if(hayPieza(filaAux,columnaAux)){
 	    							flag = true;
 	    							coordenadas = new HashSet<>();
 	    						}
@@ -987,7 +987,7 @@ public class Tablero {
 	    					coordenadas.add(new Coordenadas(filaAux,columnaAux));
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     							flag = true;
-    						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){
     							flag = true;
     							coordenadas = new HashSet<>();
     						}
@@ -1004,14 +1004,14 @@ public class Tablero {
 	    						flag2 = true;
 	    						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Peon") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
 	    							flag = true;
-	    						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+	    						}else if(hayPieza(filaAux,columnaAux)){
 	    							flag = true;
 	    							coordenadas = new HashSet<>();
 	    						}
 	    					}else{
 	    						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
 	    							flag = true;
-	    						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+	    						}else if(hayPieza(filaAux,columnaAux)){
 	    							flag = true;
 	    							coordenadas = new HashSet<>();
 	    						}
@@ -1024,7 +1024,7 @@ public class Tablero {
 	    					coordenadas.add(new Coordenadas(filaAux,columnaAux));
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     							flag = true;
-    						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){
     							flag = true;
     							coordenadas = new HashSet<>();
     						}
@@ -1039,7 +1039,7 @@ public class Tablero {
 	    					coordenadas.add(new Coordenadas(filaAux,columnaAux));
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     							flag = true;
-    						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){
     							flag = true;
     							coordenadas = new HashSet<>();
     						}
@@ -1053,14 +1053,14 @@ public class Tablero {
 	    						flag2 = true;
 	    						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Peon") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
 	    							flag = true;
-	    						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+	    						}else if(hayPieza(filaAux,columnaAux)){
 	    							flag = true;
 	    							coordenadas = new HashSet<>();
 	    						}
 	    					}else{
 	    						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
 	    							flag = true;
-	    						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+	    						}else if(hayPieza(filaAux,columnaAux)){
 	    							flag = true;
 	    							coordenadas = new HashSet<>();
 	    						}
@@ -1076,7 +1076,7 @@ public class Tablero {
 	    					coordenadas.add(new Coordenadas(filaAux,columnaAux));
     						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     							flag = true;
-    						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+    						}else if(hayPieza(filaAux,columnaAux)){
     							flag = true;
     							coordenadas = new HashSet<>();
     						}
@@ -1090,14 +1090,14 @@ public class Tablero {
 	    						flag2 = true;
 	    						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Peon") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
 	    							flag = true;
-	    						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+	    						}else if(hayPieza(filaAux,columnaAux)){
 	    							flag = true;
 	    							coordenadas = new HashSet<>();
 	    						}
 	    					}else{
 	    						if(hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
 	    							flag = true;
-	    						}else if(this.hayPiezaIgualColor(filaAux,columnaAux,color)){
+	    						}else if(hayPieza(filaAux,columnaAux)){
 	    							flag = true;
 	    							coordenadas = new HashSet<>();
 	    						}
@@ -1181,7 +1181,7 @@ public class Tablero {
     						flag = true;
     					}else if(cont==1 && this.hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     						flag = true;
-    					}else if(cont==1 && this.hayPiezaIgualColor(filaAux,columnaAux,color)) {
+    					}else if(cont==1 && hayPieza(filaAux,columnaAux)) {
     						posClavada = null;
     						flag = true;
     					}
@@ -1197,7 +1197,7 @@ public class Tablero {
     						flag = true;
     					}else if(cont==1 && this.hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     						flag = true;
-    					}else if(cont==1 && this.hayPiezaIgualColor(filaAux,columnaAux,color)) {
+    					}else if(cont==1 && hayPieza(filaAux,columnaAux)) {
     						posClavada = null;
     						flag = true;
     					}
@@ -1213,7 +1213,7 @@ public class Tablero {
     						flag = true;
     					}else if(cont==1 && this.hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     						flag = true;
-    					}else if(cont==1 && this.hayPiezaIgualColor(filaAux,columnaAux,color)) {
+    					}else if(cont==1 && hayPieza(filaAux,columnaAux)) {
     						posClavada = null;
     						flag = true;
     					}
@@ -1229,7 +1229,7 @@ public class Tablero {
     						flag = true;
     					}else if(cont==1 && this.hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Torre") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     						flag = true;
-    					}else if(cont==1 && this.hayPiezaIgualColor(filaAux,columnaAux,color)) {
+    					}else if(cont==1 && hayPieza(filaAux,columnaAux)) {
     						posClavada = null;
     						flag = true;
     					}
@@ -1246,7 +1246,7 @@ public class Tablero {
     						flag = true;
     					}else if(cont==1 && this.hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     						flag = true;
-    					}else if(cont==1 && this.hayPiezaIgualColor(filaAux,columnaAux,color)) {
+    					}else if(cont==1 && hayPieza(filaAux,columnaAux)) {
     						posClavada = null;
     						flag = true;
     					}
@@ -1263,7 +1263,7 @@ public class Tablero {
     						flag = true;
     					}else if(cont==1 && this.hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     						flag = true;
-    					}else if(cont==1 && this.hayPiezaIgualColor(filaAux,columnaAux,color)) {
+    					}else if(cont==1 && hayPieza(filaAux,columnaAux)) {
     						posClavada = null;
     						flag = true;
     					}
@@ -1280,7 +1280,7 @@ public class Tablero {
     						flag = true;
     					}else if(cont==1 && this.hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     						flag = true;
-    					}else if(cont==1 && this.hayPiezaIgualColor(filaAux,columnaAux,color)) {
+    					}else if(cont==1 && hayPieza(filaAux,columnaAux)) {
     						posClavada = null;
     						flag = true;
     					}
@@ -1297,7 +1297,7 @@ public class Tablero {
     						flag = true;
     					}else if(cont==1 && this.hayPiezaDistintoColor(filaAux,columnaAux,color) && (tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Alfil") || tablero[filaAux][columnaAux].getClass().getSimpleName().equals("Reina"))) {
     						flag = true;
-    					}else if(cont==1 && this.hayPiezaIgualColor(filaAux,columnaAux,color)) {
+    					}else if(cont==1 && hayPieza(filaAux,columnaAux)) {
     						posClavada = null;
     						flag = true;
     					}
@@ -1324,6 +1324,7 @@ public class Tablero {
     	int filaAux;
     	int columnaAux;
     	int amenazas = this.amenazaEnCasilla(this.getRey(p.getColor()).getFila(), this.getRey(p.getColor()).getColumna(), p.getColor(), true); //solo revisa las amenazas del rey color
+    	//System.out.print(amenazas);
     	// Crear una lista de tama�o din�mico de posibles movimientos
         Set<Coordenadas> posMov = new HashSet<>();
         Set<Coordenadas> bloquear = new HashSet<>();
