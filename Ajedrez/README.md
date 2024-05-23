@@ -3,16 +3,11 @@ Juego de Ajedrez
 
 Posible Bug? (tener cuidado) -> Revisar al crear Imagenes y la concurrencia (aveces crasheo por no darle tiempo a cargar imagenes/botones/nose) //creo que la solución que hice no funciona ya que imprimirTablero() y luego esperar, podría hacer click cuando se está en la función ya que luego espera, y cuando espera es porque la función ya terminó
 
-URGENTE: Esto no me permite crear un ejecutable ya que siempre tira error
-(no funciona el jar). Tengo que arreglar esto para poder crear una versión jugable.
+URGENTE: Refactorizar el código de java a c++ y usar OpenGL2.0 y SDL2 para la parte gráfica.
 
 
  FALTA: 
- 	Verificar (Hecho) -> Crear una lista de piezasComidas, guarda el momento en el que una pieza fue comida (numero de turno,pieza,coordenadas) para poder rehacer un tablero
- 	Verificar (Hecho) -> Crear un tablero en el que el usuario pueda asignar la posición de las piezas y el turno
- 	(Hecho) -> Modificar la interacción entre usuario y sistema al ingresar la pieza y donde se mueve
- 	Aprender parte Gráfica (JavaFX o hacerlo en Javascript+Html) (Hecho en JavaFX)
- 	Podría hacer en JavaScript+HTML para subirlo a un posible portfolio
+ 	Rehacer todo lo gráfico en OpenGL y SDL2 (Ya no se usa mas java ni JavaFX)
  	
 StandBy (Proximamente??):
 	A partir de una lista de movimientos (valida), adelantar o retroceder jugadas (0 retrocede, 1 adelanta)
